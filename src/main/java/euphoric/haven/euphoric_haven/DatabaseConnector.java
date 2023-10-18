@@ -25,15 +25,30 @@ public class DatabaseConnector {
 
     final MongoCollection<Place> places;
 
+    final MongoCollection<State> states;
+
+    final MongoCollection<City> cities;
+
     static User currentUser;
 
-    public DatabaseConnector() {
+    public static DatabaseConnector instance;
+
+    private DatabaseConnector() {
         client = MongoClients.create("mongodb://localhost:27017");
-        CodecProvider pojoCodecProvider = PojoCodecProvider.builder().automatic(true).register(User.class).register(Place.class).build();
+        CodecProvider pojoCodecProvider = PojoCodecProvider.builder().automatic(true).register(User.class).register(City.class).register(Place.class).register(State.class).build();
         CodecRegistry pojoCodecRegistry = fromRegistries(getDefaultCodecRegistry(), fromProviders(pojoCodecProvider));
-        this.db = client.getDatabase("nexpense").withCodecRegistry(pojoCodecRegistry);
+        this.db = client.getDatabase("euphoric_haven").withCodecRegistry(pojoCodecRegistry);
         users = db.getCollection("users", User.class);
+        states = db.getCollection("states", State.class);
         places = db.getCollection("places", Place.class);
+        cities = db.getCollection("cities", City.class);
+    }
+
+    static DatabaseConnector getInstance() {
+        if (instance == null) {
+            instance = new DatabaseConnector();
+        }
+        return instance;
     }
 
     List<User> getAllUsers() {
@@ -48,9 +63,21 @@ public class DatabaseConnector {
         return placesList;
     }
 
-    List<Place> getPlacesForCity(String city) {
+    List<State> getAllStates() {
+        List<State> statesList = new ArrayList<>();
+        states.find().into(statesList);
+        return statesList;
+    }
+
+    List<City> getCitiesForState(State state) {
+        List<City> citiesList = new ArrayList<>();
+        cities.find(eq("state", state.getName())).into(citiesList);
+        return citiesList;
+    }
+
+    List<Place> getPlacesForCity(City city) {
         List<Place> placesList = new ArrayList<>();
-        places.find(eq("city", city)).into(placesList);
+        places.find(eq("city", city.getName())).into(placesList);
         return placesList;
     }
 
@@ -66,7 +93,7 @@ public class DatabaseConnector {
             return false;
         }
 
-        if (userList.get(0).password.equals(password)) {
+        if (userList.get(0).getPassword().equals(password)) {
             currentUser = userList
                     .get(0);
             return true;

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <header>
+        <Label alignment="CENTER" text="About The Application">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+    </header>
+    <buttonTypes>
+        <ButtonType fx:constant="OK" />
+    </buttonTypes>
+    <content>
+        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+            <children>
+                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@chidiya_tapu.jpg" />
+                    </image>
+                </ImageView>
+                <Label text="Euphoric Haven">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Label alignment="TOP_LEFT" text="is a search engine that eases the search for places to travel and destinations worth traveling." wrapText="true" />
+                <Label alignment="TOP_CENTER" layoutX="20.0" layoutY="206.0" text="This app is created in Java using JavaFX for UI and MongoDB for the functionality and database. This project was created by:" wrapText="true" />
+                <Label text="Shourya Dubey">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label layoutX="255.0" layoutY="242.0" text="Deborah Alvina">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label layoutX="284.0" layoutY="260.0" text="Tanishaa Thakur">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label alignment="TOP_CENTER" layoutX="20.0" layoutY="224.0" text="as the minor project for course of Advanced Programming Practice (APP) in the 3rd Semester of the B Tech Course, 2022-26 batch." wrapText="true" />
+            </children>
+        </VBox>
+    </content>
+</DialogPane>
