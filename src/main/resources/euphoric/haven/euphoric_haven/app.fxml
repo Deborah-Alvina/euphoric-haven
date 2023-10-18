@@ -14,7 +14,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="euphoric.haven.euphoric_haven.App">
    <top>
-      <MenuBar style="-fx-background-color: #1821c1;" BorderPane.alignment="CENTER">
+      <MenuBar style="-fx-background-color: #1821c1;" stylesheets="@app.css" BorderPane.alignment="CENTER">
         <menus>
           <Menu mnemonicParsing="false" text="Logout">
             <items>

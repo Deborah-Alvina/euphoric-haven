@@ -55,6 +55,41 @@ public class LoginDialog extends Dialog<Boolean> {
             setDialogPane(dialogPane);
             setOnCloseRequest(event -> {
             });
+            final Button okButton = (Button) dialogPane.lookupButton(ButtonType.OK);
+            okButton.addEventFilter(
+                    ActionEvent.ACTION,
+                    event -> {
+                        if (borderPane.getCenter().getUserData() == login.getUserData()) {
+                            var loggedIn = DatabaseConnector.getInstance().loginUser(username.getText(), password.getText());
+                            if (loggedIn) {
+                                setResult(true);
+                            } else {
+                                Alert alert = new Alert(Alert.AlertType.ERROR);
+                                alert.setTitle("Error logging in!");
+                                alert.setContentText("The username and password does not match.");
+                                alert.getButtonTypes().clear();
+                                alert.getButtonTypes().add(ButtonType.CLOSE);
+                                alert.showAndWait();
+                                event.consume();
+                            }
+                        } else {
+                            var user = new User();
+                            user.setName(nameSignUp.getText());
+                            user.setPassword(passwordSignUp.getText());
+                            user.setUsername(usernameSignUp.getText());
+                            DatabaseConnector.getInstance().signupUser(user);
+                            // Show successful sign up
+                            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+                            alert.setTitle("Signed Up Successfully!");
+                            alert.setContentText("Welcome " + user.getUsername() + "!");
+                            alert.getButtonTypes().clear();
+                            alert.getButtonTypes().add(ButtonType.OK);
+                            alert.showAndWait();
+                            setResult(true);
+                        }
+                    }
+            );
+
             setResultConverter(buttonType -> {
                 if (borderPane.getCenter().getUserData() == login.getUserData()) {
                     if (buttonType == ButtonType.OK) {

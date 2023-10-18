@@ -40,7 +40,7 @@ public class App extends javafx.application.Application implements Initializable
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("app.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1080, 720);
-        stage.setTitle("Hello!");
+        stage.setTitle("Euphoric Haven");
         stage.setScene(scene);
         stage.show();
         showLoginDialog(stage);
@@ -73,7 +73,9 @@ public class App extends javafx.application.Application implements Initializable
 
     @FXML
     void onLogout(ActionEvent ignoredEvent) {
-        Platform.exit();
+        LoginDialog loginDialog = new LoginDialog(stage);
+        loginDialog.setOnCloseRequest(param -> Platform.exit());
+        loginDialog.showAndWait();
     }
 
     public static void main(String[] args) {

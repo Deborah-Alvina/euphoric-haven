@@ -22,9 +22,9 @@
     <content>
         <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
             <children>
-                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="180.0" fitWidth="337.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@chidiya_tapu.jpg" />
+                        <Image url="@Sanctuary.jpeg" />
                     </image>
                 </ImageView>
                 <Label text="Euphoric Haven">

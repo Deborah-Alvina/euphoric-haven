@@ -4,28 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3aad9cb9-e229-4c4a-bb42-6e197e7cbc94" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/euphoric/haven/euphoric_haven/AboutDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/euphoric/haven/euphoric_haven/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/euphoric/haven/euphoric_haven/CardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/euphoric/haven/euphoric_haven/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/euphoric/haven/euphoric_haven/LoginDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/euphoric/haven/euphoric_haven/State.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/euphoric/haven/euphoric_haven/about.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/euphoric/haven/euphoric_haven/card.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/euphoric/haven/euphoric_haven/login.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/euphoric/haven/euphoric_haven/login_part.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/euphoric/haven/euphoric_haven/signup_part.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+    <list default="true" id="aecc840c-614f-4ef7-a16f-9e7e71f1b6f3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/euphoric/haven/euphoric_haven/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/euphoric/haven/euphoric_haven/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/euphoric/haven/euphoric_haven/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/euphoric/haven/euphoric_haven/DatabaseConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/euphoric/haven/euphoric_haven/DatabaseConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/euphoric/haven/euphoric_haven/Place.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/euphoric/haven/euphoric_haven/Place.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/euphoric/haven/euphoric_haven/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/euphoric/haven/euphoric_haven/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/euphoric/haven/euphoric_haven/LoginDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/euphoric/haven/euphoric_haven/LoginDialog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/euphoric/haven/euphoric_haven/app.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/euphoric/haven/euphoric_haven/app.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/euphoric/haven/euphoric_haven/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/euphoric/haven/euphoric_haven/login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,20 +24,14 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="FxmlFile" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
-  <component name="ProjectId" id="2WwDHQTH5JgQTxk8fmeh8RQjV5P" />
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2WwMh3eprHfJaeBHxr6osDZdnFm" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -58,16 +39,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="App [:run]" type="Application" factoryName="Application">
-      <option name="ALTERNATIVE_JRE_PATH" value="liberica-20" />
+      <option name="ALTERNATIVE_JRE_PATH" value="liberica-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="euphoric.haven.euphoric_haven.App" />
       <module name="euphoric_haven.main" />
@@ -79,11 +60,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3aad9cb9-e229-4c4a-bb42-6e197e7cbc94" name="Changes" comment="" />
-      <created>1697634680080</created>
+      <changelist id="aecc840c-614f-4ef7-a16f-9e7e71f1b6f3" name="Changes" comment="" />
+      <created>1697639307696</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1697634680080</updated>
+      <updated>1697639307696</updated>
     </task>
     <servers />
   </component>
