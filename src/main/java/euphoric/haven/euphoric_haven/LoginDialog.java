@@ -73,15 +73,11 @@ public class LoginDialog extends Dialog<Boolean> {
                                 event.consume();
                             }
                         } else {
-                            var user = new User();
-                            user.setName(nameSignUp.getText());
-                            user.setPassword(passwordSignUp.getText());
-                            user.setUsername(usernameSignUp.getText());
-                            DatabaseConnector.getInstance().signupUser(user);
+                            var username=DatabaseConnector.getInstance().signupUser(nameSignUp.getText(),passwordSignUp.getText(),usernameSignUp.getText());
                             // Show successful sign up
                             Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
                             alert.setTitle("Signed Up Successfully!");
-                            alert.setContentText("Welcome " + user.getUsername() + "!");
+                            alert.setContentText("Welcome " + username + "!");
                             alert.getButtonTypes().clear();
                             alert.getButtonTypes().add(ButtonType.OK);
                             alert.showAndWait();
@@ -107,15 +103,10 @@ public class LoginDialog extends Dialog<Boolean> {
                         }
                     }
                 } else {
-                    var user = new User();
-                    user.setName(nameSignUp.getText());
-                    user.setPassword(passwordSignUp.getText());
-                    user.setUsername(usernameSignUp.getText());
-                    DatabaseConnector.getInstance().signupUser(user);
-                    // Show successful sign up
+                    var username=DatabaseConnector.getInstance().signupUser(nameSignUp.getText(),passwordSignUp.getText(),usernameSignUp.getText());
                     Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
                     alert.setTitle("Signed Up Successfully!");
-                    alert.setContentText("Welcome " + user.getUsername() + "!");
+                    alert.setContentText("Welcome " + username + "!");
                     alert.getButtonTypes().clear();
                     alert.getButtonTypes().add(ButtonType.OK);
                     alert.showAndWait();

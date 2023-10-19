@@ -35,7 +35,8 @@ public class DatabaseConnector {
 
     private DatabaseConnector() {
         client = MongoClients.create("mongodb://localhost:27017");
-        CodecProvider pojoCodecProvider = PojoCodecProvider.builder().automatic(true).register(User.class).register(City.class).register(Place.class).register(State.class).build();
+        CodecProvider pojoCodecProvider = PojoCodecProvider.builder().automatic(true).register(User.class)
+                .register(City.class).register(Place.class).register(State.class).build();
         CodecRegistry pojoCodecRegistry = fromRegistries(getDefaultCodecRegistry(), fromProviders(pojoCodecProvider));
         this.db = client.getDatabase("euphoric_haven").withCodecRegistry(pojoCodecRegistry);
         users = db.getCollection("users", User.class);
@@ -101,7 +102,12 @@ public class DatabaseConnector {
         return false;
     }
 
-    void signupUser(User user) {
+    String signupUser(String name,String password,String username) {
+        var user = new User();
+        user.setName(name);
+        user.setPassword(password);
+        user.setUsername(username);
         users.insertOne(user);
+        return name;
     }
 }
