@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aecc840c-614f-4ef7-a16f-9e7e71f1b6f3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/euphoric/haven/euphoric_haven/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/euphoric/haven/euphoric_haven/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/euphoric/haven/euphoric_haven/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/euphoric/haven/euphoric_haven/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +67,23 @@
       <option name="project" value="LOCAL" />
       <updated>1697643931626</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixed bugs">
+      <option name="closed" value="true" />
+      <created>1697728712502</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697728712502</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixed bugs">
+      <option name="closed" value="true" />
+      <created>1697728738633</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697728738633</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
