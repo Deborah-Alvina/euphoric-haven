@@ -120,8 +120,8 @@ public class App extends javafx.application.Application implements Initializable
         var places = connector.getPlacesForCity(city);
         placesView.getItems().clear();
         placesView.getItems().addAll(FXCollections.observableList(places.stream().map(this::getPlaceItem).toList()));
-        placesView.getItems().addAll(FXCollections.observableList(places.stream().map(this::getPlaceItem).toList()));
-        placesView.getItems().addAll(FXCollections.observableList(places.stream().map(this::getPlaceItem).toList()));
+//        placesView.getItems().addAll(FXCollections.observableList(places.stream().map(this::getPlaceItem).toList()));
+//        placesView.getItems().addAll(FXCollections.observableList(places.stream().map(this::getPlaceItem).toList()));
     }
 
     @Override
