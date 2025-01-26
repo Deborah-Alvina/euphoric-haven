@@ -39,6 +39,7 @@ public class App extends javafx.application.Application implements Initializable
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("app.fxml"));
+        System.out.println(fxmlLoader.getLocation().toString());
         Scene scene = new Scene(fxmlLoader.load(), 1080, 720);
         stage.setTitle("Euphoric Haven");
         stage.setScene(scene);
